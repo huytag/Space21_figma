@@ -137,6 +137,8 @@ a {
     bottom: 0px;
     left: 0;
     font-weight: 700;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
   .header-menu-item.is-active .header-menu-link {
     color: #0FBFB5 !important;
@@ -148,7 +150,8 @@ a {
     width: 0;
     height: 2px;
     bottom: 0px;
-    left: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
     background: #0FBFB5;
     transition: all 0.2s linear;
   }
