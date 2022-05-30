@@ -1,0 +1,42 @@
+.footer {
+  background: $bg-black;
+  .container-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+  }
+  &-left {
+    display: inline-flex;
+    gap: 0 50px;
+    span {
+      position: relative;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: calc(16 / 13);
+      display: inline-flex;
+      align-items: center;
+      color: #BFBFBF;
+    }
+    span::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 6px;
+      height: 6px;
+      border: none;
+      top: 50%;
+      left: -15px;
+      transform: translateY(-50%);
+      border-radius: 100rem;
+      background-color: #bfbfbf;
+    }
+  }
+  &-right {
+    span {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: calc(16 / 13);
+    }
+  }
+}

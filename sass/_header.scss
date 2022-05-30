@@ -1,0 +1,113 @@
+.header {
+  background: $bg-black;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-left {
+    display: inline-flex;
+    align-items: center;
+    gap: 0 90px;
+  }
+  &-menu {
+    display: inline-flex;
+    gap: 0 42px;
+    position: relative;
+    a {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: calc(22 / 18);
+    }
+    .header-menu-link {
+      position: relative;
+    }
+    .menu-item-dropdown::after {
+      position: absolute;
+      padding-left: 10px;
+      content: url(../image/icon/dropdown.png);
+      align-items: center;
+      list-style: 1;
+    }
+  }
+
+  &-menu-item {
+    padding: 40px 0;
+  }
+  &-right {
+    display: inline-flex;
+    align-items: center;
+    gap: 0 40px;
+  }
+  &-search {
+    position: relative;
+  }
+  &-search-in_in {
+    background: #1d1f24;
+    border: none;
+    border-radius: 5px;
+    padding: 13px 18px;
+    color: #434750;
+  }
+  &-search-in_btn {
+    position: absolute;
+    background: transparent;
+    border: none;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+  }
+  &-user-info {
+    display: inline-flex;
+    align-items: center;
+    gap: 0 14px;
+    .user-name {
+      color: $text_white;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: calc(22 / 18);
+      span {
+        color: $text-primary;
+      }
+    }
+  }
+}
+
+@media (hover: hover) {
+  .header-menu-item {
+    position: relative;
+    &.is-active {
+      &::after {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0px;
+        left: 0;
+        font-weight: 700;
+      }
+      .header-menu-link {
+        color: $text-primary !important;
+      }
+    }
+  }
+  .header-menu-item::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    background: $text-primary;
+    transition: all 0.2s linear;
+  }
+
+  .header-menu-item:hover {
+    &::after {
+      width: 100%;
+    }
+    .header-menu-link {
+      color: $text-primary !important;
+    }
+  }
+}

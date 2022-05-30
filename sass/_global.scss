@@ -1,0 +1,52 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: $bg-primary;
+  color: $text_white;
+}
+
+.container-custom {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1600px;
+}
+
+ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: $text_white !important;
+}
+
+.button {
+  color: $text_white;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  padding: 20px 45px;
+  &-primary {
+    background: $text-primary;
+    border: none;
+    border-radius: 10px;
+  }
+}
+
+.title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: calc(58 / 48);
+  padding: 0;
+  margin: 0;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: calc(30 / 24);
+  padding: 0;
+  margin: 0;
+}
