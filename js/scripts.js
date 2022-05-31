@@ -2,6 +2,7 @@
   $(function () {
     $(document).ready(function () {
       AccordionAccountUser();
+      checkUrl();
     });
     // function menuToggle() {
     //   const toggle = document.querySelector(".menu-toglle");
@@ -21,6 +22,20 @@
     //     }
     //   });
     // }
+    function checkUrl() {
+      console.log(window.location.href);
+      const url = window.location.href;
+      if (url.toString() === "https://huytag.github.io/Space21_figma/") {
+        let a = document.querySelectorAll("a");
+        for (let i = 0; i < a.length; i++) {
+          if (a[i].dataset.href) {
+            a[i].href =
+              "https://huytag.github.io/Space21_figma/" + a[i].dataset.href;
+          }
+        }
+      }
+    }
+    
     function AccordionAccountUser() {
       var acc = document.getElementsByClassName("accordion");
       let view = $(".tab-accordion");
