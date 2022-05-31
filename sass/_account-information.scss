@@ -7,23 +7,93 @@
   }
   &-item {
     background: $bg-modal;
-    padding: 15px 20px;
     border-radius: 5px;
+  }
+  .panel {
+    background: $bg-modal;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    &-edit {
+      padding: 27px 0px 30px 0px;
+      margin: 0px 20px;
+      border-top: 1px solid #25282f;
+    }
+    .change-group {
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 90%;
+      gap: 25px 20px;
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: calc(19 / 16);
+      }
+      .ip-group {
+        display: inline-flex;
+        gap: 0 20px;
+        width: 100%;
+        input {
+          color: #7a8297;
+          font-weight: 400;
+          width: 33.33%;
+          &::placeholder {
+            color: #7a8297;
+          }
+        }
+      }
+      .btn-group {
+        gap: 0 20px;
+        display: inline-flex;
+        width: 100%;
+        justify-content: end;
+      }
+      input {
+        background: #ffffff;
+        border-radius: 5px;
+        border: none;
+        padding: 15px;
+        color: $text-primary;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(19 / 16);
+        &::placeholder {
+          color: $text-primary;
+        }
+        &:focus {
+          border: none;
+          color: $text-primary;
+        }
+      }
+      .button {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: calc(22 / 18);
+        padding: 14.5px 35px !important;
+        border-radius: 5px !important;
+      }
+    }
+  }
+}
+
+.account {
+  &-view {
+    padding: 15px 20px;
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-}
-
-.account {
   &-left {
     display: flex;
     align-items: center;
     gap: 0 60px;
   }
   &-logo {
-    width: 170px;
+    width: 175px;
     img {
       padding: 8px;
       border-radius: 50rem;
@@ -62,6 +132,8 @@
     display: flex;
     align-items: center;
     gap: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
     span {
       font-weight: 400;
       font-size: 16px;
@@ -70,6 +142,20 @@
     }
     &:hover {
       background: rgb(46, 50, 56);
+      span {
+        color: $text-primary;
+      }
+      img {
+        content: url("../image/icon/Edit-acctive.png");
+      }
+    }
+    &.active {
+      span {
+        color: $text-primary;
+      }
+      img {
+        content: url("../image/icon/Edit-acctive.png");
+      }
     }
   }
 }

@@ -213,7 +213,7 @@ a {
 .silder-menu-list-content {
   position: relative;
   margin-bottom: 30px;
-  padding: 0 0 30px 20px;
+  padding: 0 0 30px 0px;
 }
 .silder-menu-list-content:last-child::after {
   height: 0;
@@ -232,8 +232,12 @@ a {
   cursor: pointer;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0px;
-  transition: all 0.2s ease-in;
+  padding: 15px 20px;
+  transition: 0.3s linear;
+}
+.silder-menu-list-content-item.is-active {
+  background: linear-gradient(90deg, rgba(33, 36, 43, 0) 0%, #3a3d45 73.75%);
+  border-radius: 5px;
 }
 .silder-menu-list-content-item:hover .item-left label {
   color: #FFFFFF;
@@ -375,21 +379,91 @@ a {
 }
 .account-information-item {
   background: #3A3D45;
-  padding: 15px 20px;
   border-radius: 5px;
+}
+.account-information .panel {
+  background: #3A3D45;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.account-information .panel-edit {
+  padding: 27px 0px 30px 0px;
+  margin: 0px 20px;
+  border-top: 1px solid #25282f;
+}
+.account-information .panel .change-group {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  gap: 25px 20px;
+}
+.account-information .panel .change-group p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1875;
+}
+.account-information .panel .change-group .ip-group {
+  display: inline-flex;
+  gap: 0 20px;
+  width: 100%;
+}
+.account-information .panel .change-group .ip-group input {
+  color: #7a8297;
+  font-weight: 400;
+  width: 33.33%;
+}
+.account-information .panel .change-group .ip-group input::placeholder {
+  color: #7a8297;
+}
+.account-information .panel .change-group .btn-group {
+  gap: 0 20px;
+  display: inline-flex;
+  width: 100%;
+  justify-content: end;
+}
+.account-information .panel .change-group input {
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding: 15px;
+  color: #0FBFB5;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.1875;
+}
+.account-information .panel .change-group input::placeholder {
+  color: #0FBFB5;
+}
+.account-information .panel .change-group input:focus {
+  border: none;
+  color: #0FBFB5;
+}
+.account-information .panel .change-group .button {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  padding: 14.5px 35px !important;
+  border-radius: 5px !important;
+}
+
+.account-view {
+  padding: 15px 20px;
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .account-left {
   display: flex;
   align-items: center;
   gap: 0 60px;
 }
 .account-logo {
-  width: 170px;
+  width: 175px;
 }
 .account-logo img {
   padding: 8px;
@@ -428,6 +502,8 @@ a {
   display: flex;
   align-items: center;
   gap: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
 }
 .account-edit-btn span {
   font-weight: 400;
@@ -437,6 +513,18 @@ a {
 }
 .account-edit-btn:hover {
   background: rgb(46, 50, 56);
+}
+.account-edit-btn:hover span {
+  color: #0FBFB5;
+}
+.account-edit-btn:hover img {
+  content: url("../image/icon/Edit-acctive.png");
+}
+.account-edit-btn.active span {
+  color: #0FBFB5;
+}
+.account-edit-btn.active img {
+  content: url("../image/icon/Edit-acctive.png");
 }
 
 /*# sourceMappingURL=index.css.map */
