@@ -1,0 +1,75 @@
+.account-information {
+  .title {
+    color: $text-gray2;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: calc(44 / 36);
+  }
+  &-item {
+    background: $bg-modal;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.account {
+  &-left {
+    display: flex;
+    align-items: center;
+    gap: 0 60px;
+  }
+  &-logo {
+    width: 170px;
+    img {
+      padding: 8px;
+      border-radius: 50rem;
+      background: #2d3139;
+      margin-right: 20px;
+    }
+    span {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: calc(19 / 16);
+      color: $text-gray2;
+    }
+  }
+  &-name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    position: relative;
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 100rem;
+      background-color: $text-gray2;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -33px;
+    }
+  }
+  &-edit-btn {
+    padding: 5px 9px 5px 15px;
+    background: #2d3139;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    span {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: calc(19 / 16);
+      color: #757575;
+    }
+    &:hover {
+      background: rgb(46, 50, 56);
+    }
+  }
+}

@@ -17,6 +17,11 @@ ul {
   padding: 0 !important;
 }
 
+.text-primaty {
+  color: #0FBFB5 !important;
+  font-weight: 400 !important;
+}
+
 a {
   text-decoration: none !important;
   color: #FFFFFF !important;
@@ -28,11 +33,15 @@ a {
   font-size: 18px;
   line-height: 1.2222222222;
   padding: 20px 45px;
+  border-radius: 10px;
 }
 .button-primary {
   background: #0FBFB5;
   border: none;
-  border-radius: 10px;
+}
+.button-gray {
+  background: #9e9e9e;
+  border-radius: 5px;
 }
 
 .title {
@@ -101,6 +110,7 @@ a {
   border-radius: 5px;
   padding: 13px 18px;
   color: #434750;
+  width: 176px;
 }
 .header-search-in_btn {
   position: absolute;
@@ -182,6 +192,17 @@ a {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 1700px) {
+  .wrapper-container-left {
+    width: 18%;
+  }
+
+  .wrapper-container-content-right {
+    width: 82%;
+    padding-left: 50px;
+    margin-top: 20px;
+  }
+}
 .silder-menu-title {
   font-weight: 700;
   font-size: 24px;
@@ -251,7 +272,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .footer-left {
   display: inline-flex;
@@ -302,17 +324,15 @@ a {
 .welcome-logo {
   position: relative;
 }
+.welcome-logo .logo-2 {
+  transform: rotate(1.69deg);
+  position: relative;
+  left: -5px;
+}
 .welcome-logo .logo-1 {
   position: absolute;
-  top: 0;
-  background: #3a3d45;
-  transform: rotate(1.69deg);
-}
-.welcome-logo .logo-2 {
-  position: relative;
-  top: 0;
-  transform: rotate(1.69deg);
-  opacity: 0.5;
+  right: 56px;
+  top: 25px;
 }
 .welcome-content {
   margin-top: -20px;
@@ -321,11 +341,102 @@ a {
   margin-bottom: 40px;
 }
 .welcome-content h3 {
-  white-space: nowrap;
   margin-bottom: 15px;
 }
 .welcome-content p {
   margin-bottom: 62px;
+}
+
+@media screen and (max-width: 1700px) {
+  .welcome-space {
+    padding: 53px 50px 65px 0px;
+    gap: 0 20px;
+  }
+
+  .welcome-logo .logo-2 {
+    max-width: 550px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .welcome-space {
+    padding: 43px 40px 45px 0px;
+    gap: 0 20px;
+  }
+
+  .welcome-logo .logo-2 {
+    max-width: 450px;
+  }
+}
+.account-information .title {
+  color: #C0C0C0;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.2222222222;
+}
+.account-information-item {
+  background: #3A3D45;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account-left {
+  display: flex;
+  align-items: center;
+  gap: 0 60px;
+}
+.account-logo {
+  width: 170px;
+}
+.account-logo img {
+  padding: 8px;
+  border-radius: 50rem;
+  background: #2d3139;
+  margin-right: 20px;
+}
+.account-logo span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1875;
+  color: #C0C0C0;
+}
+.account-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  position: relative;
+}
+.account-name::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 100rem;
+  background-color: #C0C0C0;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -33px;
+}
+.account-edit-btn {
+  padding: 5px 9px 5px 15px;
+  background: #2d3139;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.account-edit-btn span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1875;
+  color: #757575;
+}
+.account-edit-btn:hover {
+  background: rgb(46, 50, 56);
 }
 
 /*# sourceMappingURL=index.css.map */

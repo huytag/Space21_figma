@@ -17,6 +17,19 @@
   margin-top: 20px;
 }
 
+@media screen and (max-width: 1700px) {
+  .wrapper-container-left {
+    width: 18%;
+  }
+  .wrapper-container-content-right {
+    width: calc(100% - 18%);
+    padding-left: 50px;
+    margin-top: 20px;
+  }
+}
+
+
+
 .silder-menu {
   
   &-title {

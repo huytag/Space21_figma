@@ -17,6 +17,11 @@ ul {
   padding: 0 !important;
 }
 
+.text-primaty {
+  color: $text-primary !important;
+  font-weight: 400 !important;
+}
+
 a {
   text-decoration: none !important;
   color: $text_white !important;
@@ -28,10 +33,14 @@ a {
   font-size: 18px;
   line-height: calc(22 / 18);
   padding: 20px 45px;
+  border-radius: 10px;
   &-primary {
     background: $text-primary;
     border: none;
-    border-radius: 10px;
+  }
+  &-gray {
+    background: #9e9e9e;
+    border-radius: 5px;
   }
 }
 
