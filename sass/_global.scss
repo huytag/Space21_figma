@@ -27,6 +27,10 @@ a {
   color: $text_white !important;
 }
 
+.nohover {
+  pointer-events: none;
+}
+
 .button {
   color: $text_white;
   font-weight: 600;

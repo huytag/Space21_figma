@@ -112,7 +112,7 @@
               </div>
               <div class="silder-menu-title">Account</div>
               <div class="silder-menu-list-content">
-                <div class="silder-menu-list-content-item is-active">
+                <div class="silder-menu-list-content-item">
                   <div class="item-left">
                     <div class="menu-icon">
                       <img src="../image/icon/Account Infomation.png" alt="" />
@@ -129,7 +129,7 @@
                     <img src="../image/icon/dropdown-left.png" alt="" />
                   </div>
                 </div>
-                <div class="silder-menu-list-content-item">
+                <div class="silder-menu-list-content-item is-active">
                   <div class="item-left">
                     <div class="menu-icon">
                       <img src="../image/icon/Security.png" alt="" />
@@ -207,140 +207,137 @@
           </div>
           <div class="wrapper-container-content-right">
             <div class="account-information">
-              <h4 class="title">Account information</h4>
+              <h4 class="title">Security</h4>
+              <div class="account-information-item">
+                <div class="account-view tab-accordion">
+                  <div class="account-left">
+                    <div class="account-logo security-logo">
+                      <img src="../image/icon/Lock.png" alt="" />
+                      <span>Two-Factor Authentication</span>
+                    </div>
+                  </div>
+                  <a
+                    class="accordion account-edit-btn security-btn-hover-check"
+                  >
+                    <span>Enable</span>
+                    <img src="../image/icon/check_ring_round.png" alt="" />
+                  </a>
+                </div>
+                <div class="panel">
+                  <div class="panel-edit">
+                    <div class="row security-authentication">
+                      <div class="col-4 security-au-left text-center">
+                        <img src="../image/icon/QR_c.png" alt="" />
+                        <div class="text">
+                          <p>
+                            1. Sean this QR code with your Authenticator app
+                          </p>
+                          <p>2. Enter the random number presented below</p>
+                        </div>
+                        <input type="text" />
+                        <a href="#" class="button button-gray">Vertify</a>
+                      </div>
+                      <div class="col-5 security-au-right">
+                        <div class="text">
+                          <h6 class="title">Tips:</h6>
+                          <p>
+                            Install an authenticator app on your mobile device.
+                            Recommended options:
+                          </p>
+                          <p>
+                            Google Authenticator, Authy, Microsoft Authenticator
+                          </p>
+                        </div>
+                        <div class="img-group">
+                          <img src="../image/icon/Authy.png" alt="" />
+                          <img src="../image/icon/Google_authen.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="account-information-item">
+                <div class="account-view tab-accordion">
+                  <div class="account-left">
+                    <div class="account-logo">
+                      <img src="../image/icon/Transger.png" alt="" />
+                      <span>Transfer Code</span>
+                    </div>
+                  </div>
+                  <a class="accordion account-edit-btn">
+                    <span>Change</span>
+                    <img src="../image/icon/Edit.png" alt="" />
+                  </a>
+                </div>
+                <div class="panel">
+                  <div class="panel-edit">
+                    <h4 class="security-title">Change Your Transfer Code</h4>
+                    <div class="security-change-form">
+                      <textarea
+                        rows="4"
+                        cols="35"
+                        placeholder="Recovery Phrase"
+                      ></textarea>
+                      <div class="ip-group">
+                        <input
+                          type="password"
+                          placeholder="New Transfer Code"
+                        />
+                        <a href="#"
+                          ><img src="../image/icon/View-input.png" alt=""
+                        /></a>
+                      </div>
+                      <a href="#" class="button button-primary text-center"
+                        >Save</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="account-information-item">
+                <div class="account-view tab-accordion">
+                  <div class="account-left">
+                    <div class="account-logo">
+                      <img src="../image/icon/Frame.png" alt="" />
+                      <span>Private Key</span>
+                    </div>
+                  </div>
+                  <a
+                    class="accordion account-edit-btn security-btn-hover-import"
+                  >
+                    <span>Download</span>
+                    <img src="../image/icon/Import.png" alt="" />
+                  </a>
+                </div>
+                <div class="panel">
+                  <div class="panel-edit">
+                    <h4 class="security-title">Reveal Private Key</h4>
+                    <p class="security-desc">
+                      Using this tool, you will be able to download and save
+                      your private key which is connected to your Ethereum
+                      address. Be Very Careful with this key as it can grant,
+                      the halder total control over your Ethereum address.
+                    </p>
+                    <a href="#" class="button button-primary security-button"
+                      >Download Private Key
+                      <img src="../image/icon/Import-wt.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
               <div class="account-information-item">
                 <div class="account-view">
                   <div class="account-left">
                     <div class="account-logo">
-                      <img src="../image/icon/User.png" alt="" />
-                      <span>Full Name</span>
+                      <img src="../image/icon/Frame (1).png" alt="" />
+                      <span>Delete Account</span>
                     </div>
-                    <div class="account-name">Thang chay</div>
                   </div>
-                </div>
-              </div>
-              <div class="account-information-item">
-                <div class="account-view tab-accordion">
-                  <div class="account-left">
-                    <div class="account-logo">
-                      <img src="../image/icon/Display.png" alt="" />
-                      <span>Display name</span>
-                    </div>
-                    <div class="account-name">Thang chay</div>
-                  </div>
-                  <a class="accordion account-edit-btn">
-                    <span>Edit</span>
-                    <img src="../image/icon/Edit.png" alt="" />
+                  <a class="account-edit-btn nohover">
+                    <span>Set up</span>
+                    <img src="../image/icon/Subtract.png" alt="" />
                   </a>
-                </div>
-                <div class="panel">
-                  <div class="panel-edit">
-                    <p>
-                      Your display name will be seen when you play games, Have
-                      fun with it!
-                    </p>
-                    <div class="change-group">
-                      <input type="text" placeholder="Thang chay" />
-                      <a href="#" class="button button-primary">Change</a>
-                      <a href="#" class="button button-gray">Cancel</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="account-information-item">
-                <div class="account-view tab-accordion">
-                  <div class="account-left">
-                    <div class="account-logo">
-                      <img src="../image/icon/eEmail.png" alt="" />
-                      <span>Email Address</span>
-                    </div>
-                    <div class="account-name">huytagicloud@gmail.com</div>
-                  </div>
-                  <a class="accordion account-edit-btn">
-                    <span>Edit</span>
-                    <img src="../image/icon/Edit.png" alt="" />
-                  </a>
-                </div>
-                <div class="panel">
-                  <div class="panel-edit">
-                    <p>
-                      Your verified email address is used to send login codes
-                      when suspicious or unusual activity is detected. We can
-                      also remind you of your wallet login ID, and send you
-                      payments alerts when you receive funds.
-                    </p>
-                    <div class="change-group">
-                      <input type="text" placeholder="huytagicloud@gmail.com" />
-                      <a href="#" class="button button-primary">Change</a>
-                      <a href="#" class="button button-gray">Cancel</a>
-                      <p>
-                        <span class="text-primaty">Note:</span> This will change
-                        your wallet’s email address. The email address you use
-                        to buy or sell with will remain the same
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="account-information-item">
-                <div class="account-view tab-accordion">
-                  <div class="account-left">
-                    <div class="account-logo">
-                      <img src="../image/icon/Key.png" alt="" />
-                      <span>Password</span>
-                    </div>
-                    <div class="account-name text-primaty">
-                      Cannot be displayed for security reasons
-                    </div>
-                  </div>
-                  <a class="accordion account-edit-btn">
-                    <span>Edit</span>
-                    <img src="../image/icon/Edit.png" alt="" />
-                  </a>
-                </div>
-                <div class="panel">
-                  <div class="panel-edit">
-                    <p>Account Password</p>
-                    <div class="change-group">
-                      <div class="ip-group">
-                        <input type="text" placeholder="Current Password" />
-                        <input type="text" placeholder="New Password" />
-                        <input type="text" placeholder="Confirm Password" />
-                      </div>
-                      <div class="btn-group">
-                        <a href="#" class="button button-primary">Change</a>
-                        <a href="#" class="button button-gray">Cancel</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="account-information-item">
-                <div class="account-view tab-accordion">
-                  <div class="account-left">
-                    <div class="account-logo">
-                      <img src="../image/icon/Desk_alt.png" alt="" />
-                      <span>Phone Number</span>
-                    </div>
-                    <div class="account-name text-primaty">Unregistered</div>
-                  </div>
-                  <a class="accordion account-edit-btn">
-                    <span>Edit</span>
-                    <img src="../image/icon/Edit.png" alt="" />
-                  </a>
-                </div>
-                <div class="panel">
-                  <div class="panel-edit">
-                    <p>
-                      Your phone number may be used to send payment alerts, ID
-                      reminders, and login codes.
-                    </p>
-                    <div class="change-group">
-                      <input type="text" placeholder="Enter Phone Number" />
-                      <a href="#" class="button button-primary">Change</a>
-                      <a href="#" class="button button-gray">Cancel</a>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
