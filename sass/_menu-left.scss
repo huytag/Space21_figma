@@ -14,7 +14,6 @@
 .wrapper-container-content-right {
   width: calc(100% - 18%);
   padding-left: 130px;
-  margin-top: 20px;
 }
 
 @media screen and (max-width: 1700px) {
@@ -24,9 +23,20 @@
   .wrapper-container-content-right {
     width: calc(100% - 18%);
     padding-left: 50px;
-    margin-top: 20px;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .wrapper-container-left {
+    display: none;
+  }
+  .wrapper-container-content-right {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
 
 .silder-menu {
   &-title {
@@ -68,15 +78,24 @@
     align-items: center;
     padding: 15px 20px;
     transition: 0.3s linear;
+    a {
+      color: $text-gray2 !important;
+    }
     &.is-active {
       background: linear-gradient(
         90deg,
         rgba(33, 36, 43, 0) 0%,
         #3a3d45 73.75%
       );
+      a {
+        color: $text_white !important;
+      }
       border-radius: 5px;
     }
     &:hover {
+      a {
+        color: $text_white !important;
+      }
       .item-left {
         label {
           color: $text_white;

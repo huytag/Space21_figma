@@ -150,3 +150,21 @@
     }
   }
 }
+
+@media screen and (max-width: 512px) {
+  .account-view  {
+    display: block;
+    .security-btn-hover-check {
+      margin-top: 20px;
+      display: inline-flex;
+    }
+    .account-edit-btn {
+      margin-top: 20px;
+      display: inline-flex;
+    }
+    .security-btn-hover-import {
+      margin-top: 20px;
+      display: inline-flex;
+    }
+  }
+}

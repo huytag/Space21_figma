@@ -79,16 +79,16 @@
             <div class="silder-menu-item">
               <div class="silder-menu-title">Menu</div>
               <div class="silder-menu-list-content">
-                <div class="silder-menu-list-content-item">
+                <div class="silder-menu-list-content-item is-active">
                   <div class="item-left">
                     <div class="menu-icon">
                       <img src="../image/icon/Inventory.png" alt="" />
                     </div>
                     <label
-                    ><a data-href="/inventory" href="/inventory"
-                      >Inventory</a
-                    ></label
-                  >
+                      ><a data-href="/inventory" href="/inventory"
+                        >Inventory</a
+                      ></label
+                    >
                   </div>
                   <div class="item-right">
                     <img src="../image/icon/dropdown-left.png" alt="" />
@@ -119,7 +119,7 @@
               </div>
               <div class="silder-menu-title">Account</div>
               <div class="silder-menu-list-content">
-                <div class="silder-menu-list-content-item is-active">
+                <div class="silder-menu-list-content-item">
                   <div class="item-left">
                     <div class="menu-icon">
                       <img src="../image/icon/Account Infomation.png" alt="" />
@@ -213,139 +213,174 @@
             </div>
           </div>
           <div class="wrapper-container-content-right">
-            <div class="account-information">
-              <h4 class="title">Account information</h4>
-              <div class="account-information-item">
-                <div class="account-view">
-                  <div class="account-left">
-                    <div class="account-logo">
-                      <img src="../image/icon/User.png" alt="" />
-                      <span>Full Name</span>
-                    </div>
-                    <div class="account-name">Thang chay</div>
-                  </div>
-                </div>
+            <div class="inventory">
+              <div class="inventory-btn-top">
+                <a href="" class="button button-primary">
+                  <img src="../image/icon/token-icon.png" alt="" />
+                  Tokens
+                </a>
+                <a href="" class="button button-gray"
+                  ><img src="../image/icon/Union.png" alt="" />NFT</a
+                >
               </div>
-              <div class="account-information-item">
-                <div class="account-view tab-accordion">
-                  <div class="account-left">
-                    <div class="account-logo">
-                      <img src="../image/icon/Display.png" alt="" />
-                      <span>Display name</span>
-                    </div>
-                    <div class="account-name">Thang chay</div>
-                  </div>
-                  <a class="accordion account-edit-btn">
-                    <span>Edit</span>
-                    <img src="../image/icon/Edit.png" alt="" />
-                  </a>
-                </div>
-                <div class="panel">
-                  <div class="panel-edit">
-                    <p>
-                      Your display name will be seen when you play games, Have
-                      fun with it!
-                    </p>
-                    <div class="change-group">
-                      <input type="text" placeholder="Thang chay" />
-                      <a href="#" class="button button-primary">Change</a>
-                      <a href="#" class="button button-gray">Cancel</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="account-information-item">
-                <div class="account-view tab-accordion">
-                  <div class="account-left">
-                    <div class="account-logo">
-                      <img src="../image/icon/eEmail.png" alt="" />
-                      <span>Email Address</span>
-                    </div>
-                    <div class="account-name">huytagicloud@gmail.com</div>
-                  </div>
-                  <a class="accordion account-edit-btn">
-                    <span>Edit</span>
-                    <img src="../image/icon/Edit.png" alt="" />
-                  </a>
-                </div>
-                <div class="panel">
-                  <div class="panel-edit">
-                    <p>
-                      Your verified email address is used to send login codes
-                      when suspicious or unusual activity is detected. We can
-                      also remind you of your wallet login ID, and send you
-                      payments alerts when you receive funds.
-                    </p>
-                    <div class="change-group">
-                      <input type="text" placeholder="huytagicloud@gmail.com" />
-                      <a href="#" class="button button-primary">Change</a>
-                      <a href="#" class="button button-gray">Cancel</a>
-                      <p>
-                        <span class="text-primaty">Note:</span> This will change
-                        your wallet’s email address. The email address you use
-                        to buy or sell with will remain the same
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="account-information-item">
-                <div class="account-view tab-accordion">
-                  <div class="account-left">
-                    <div class="account-logo">
-                      <img src="../image/icon/Key.png" alt="" />
-                      <span>Password</span>
-                    </div>
-                    <div class="account-name text-primaty">
-                      Cannot be displayed for security reasons
-                    </div>
-                  </div>
-                  <a class="accordion account-edit-btn">
-                    <span>Edit</span>
-                    <img src="../image/icon/Edit.png" alt="" />
-                  </a>
-                </div>
-                <div class="panel">
-                  <div class="panel-edit">
-                    <p>Account Password</p>
-                    <div class="change-group">
-                      <div class="ip-group">
-                        <input type="text" placeholder="Current Password" />
-                        <input type="text" placeholder="New Password" />
-                        <input type="text" placeholder="Confirm Password" />
+              <div class="inventory-items">
+                <div class="inventory-item">
+                  <div class="inventory-item-token-price">
+                    <div class="inventory-token">
+                      <img src="../image/Tokens/Group 8598.png" alt="" />
+                      <div class="text">
+                        <h6>ETH</h6>
+                        <span>Ethereum</span>
                       </div>
-                      <div class="btn-group">
-                        <a href="#" class="button button-primary">Change</a>
-                        <a href="#" class="button button-gray">Cancel</a>
+                    </div>
+                    <div class="inventory-token-price">
+                      <span>0,00000738</span>
+                    </div>
+                  </div>
+                  <div class="inventory-item-token-group">
+                    <div class="inventory-btn-item">
+                      <div class="item">
+                        <img src="../image/icon/deposit.png" alt="" />
+                        <span class="text-primaty">Deposit</span>
+                      </div>
+                    </div>
+                    <div class="inventory-btn-item">
+                      <div class="item">
+                        <img src="../image/icon/Sent.png" alt="" />
+                        <span class="text-primaty">Sent</span>
+                      </div>
+                    </div>
+                    <div class="inventory-btn-item">
+                      <div class="item">
+                        <img src="../image/icon/Convert.png" alt="" />
+                        <span class="text-primaty">Convert</span>
+                      </div>
+                    </div>
+                    <div class="inventory-btn-item">
+                      <div class="item">
+                        <img src="../image/icon/History.png" alt="" />
+                        <span class="text-primaty">History</span>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="account-information-item">
-                <div class="account-view tab-accordion">
-                  <div class="account-left">
-                    <div class="account-logo">
-                      <img src="../image/icon/Desk_alt.png" alt="" />
-                      <span>Phone Number</span>
+                <div class="inventory-item">
+                  <div class="inventory-item-token-price">
+                    <div class="inventory-token">
+                      <img src="../image/Tokens/Group 8597.png" alt="" />
+                      <div class="text">
+                        <h6>SPACE</h6>
+                        <span>Ethereum</span>
+                      </div>
                     </div>
-                    <div class="account-name text-primaty">Unregistered</div>
+                    <div class="inventory-token-price">
+                      <span>0,00000738</span>
+                    </div>
                   </div>
-                  <a class="accordion account-edit-btn">
-                    <span>Edit</span>
-                    <img src="../image/icon/Edit.png" alt="" />
-                  </a>
+                  <div class="inventory-item-token-group">
+                    <div class="inventory-btn-item">
+                      <div class="item">
+                        <img src="../image/icon/deposit.png" alt="" />
+                        <span class="text-primaty">Deposit</span>
+                      </div>
+                    </div>
+                    <div class="inventory-btn-item">
+                      <div class="item">
+                        <img src="../image/icon/Sent.png" alt="" />
+                        <span class="text-primaty">Sent</span>
+                      </div>
+                    </div>
+                    <div class="inventory-btn-item">
+                      <div class="item">
+                        <img src="../image/icon/Convert.png" alt="" />
+                        <span class="text-primaty">Convert</span>
+                      </div>
+                    </div>
+                    <div class="inventory-btn-item">
+                      <div class="item">
+                        <img src="../image/icon/History.png" alt="" />
+                        <span class="text-primaty">History</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="panel">
-                  <div class="panel-edit">
-                    <p>
-                      Your phone number may be used to send payment alerts, ID
-                      reminders, and login codes.
-                    </p>
-                    <div class="change-group">
-                      <input type="text" placeholder="Enter Phone Number" />
-                      <a href="#" class="button button-primary">Change</a>
-                      <a href="#" class="button button-gray">Cancel</a>
+                <div class="inventory-item">
+                  <div class="inventory-item-token-price">
+                    <div class="inventory-token">
+                      <img src="../image/Tokens/2.png" alt="" />
+                      <div class="text">
+                        <h6>ABBC</h6>
+                        <span>Ethereum</span>
+                      </div>
+                    </div>
+                    <div class="inventory-token-price">
+                      <span>0,00000738</span>
+                    </div>
+                  </div>
+                  <div class="inventory-item-token-group">
+                    <div class="inventory-btn-item">
+                      <div class="item">
+                        <img src="../image/icon/deposit.png" alt="" />
+                        <span class="text-primaty">Deposit</span>
+                      </div>
+                    </div>
+                    <div class="inventory-btn-item">
+                      <div class="item">
+                        <img src="../image/icon/Sent.png" alt="" />
+                        <span class="text-primaty">Sent</span>
+                      </div>
+                    </div>
+                    <div class="inventory-btn-item">
+                      <div class="item">
+                        <img src="../image/icon/Convert.png" alt="" />
+                        <span class="text-primaty">Convert</span>
+                      </div>
+                    </div>
+                    <div class="inventory-btn-item">
+                      <div class="item">
+                        <img src="../image/icon/History.png" alt="" />
+                        <span class="text-primaty">History</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="inventory-item">
+                  <div class="inventory-item-token-price">
+                    <div class="inventory-token">
+                      <img src="../image/Tokens/4.png" alt="" />
+                      <div class="text">
+                        <h6>YKC</h6>
+                        <span>Ethereum</span>
+                      </div>
+                    </div>
+                    <div class="inventory-token-price">
+                      <span>0,00000738</span>
+                    </div>
+                  </div>
+                  <div class="inventory-item-token-group">
+                    <div class="inventory-btn-item">
+                      <div class="item">
+                        <img src="../image/icon/deposit.png" alt="" />
+                        <span class="text-primaty">Deposit</span>
+                      </div>
+                    </div>
+                    <div class="inventory-btn-item">
+                      <div class="item">
+                        <img src="../image/icon/Sent.png" alt="" />
+                        <span class="text-primaty">Sent</span>
+                      </div>
+                    </div>
+                    <div class="inventory-btn-item">
+                      <div class="item">
+                        <img src="../image/icon/Convert.png" alt="" />
+                        <span class="text-primaty">Convert</span>
+                      </div>
+                    </div>
+                    <div class="inventory-btn-item">
+                      <div class="item">
+                        <img src="../image/icon/History.png" alt="" />
+                        <span class="text-primaty">History</span>
+                      </div>
                     </div>
                   </div>
                 </div>

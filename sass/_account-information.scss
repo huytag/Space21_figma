@@ -159,3 +159,9 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .account-name {
+    display: none;
+  }
+}

@@ -7,6 +7,10 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
+  &-sp-menu {
+    display: inline-flex;
+    gap: 0 50px;
+  }
   &-left {
     display: inline-flex;
     gap: 0 50px;
@@ -17,7 +21,7 @@
       line-height: calc(16 / 13);
       display: inline-flex;
       align-items: center;
-      color: #BFBFBF;
+      color: #bfbfbf;
     }
     span::before {
       position: absolute;
@@ -39,5 +43,28 @@
       font-size: 13px;
       line-height: calc(16 / 13);
     }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    background: $bg-black;
+    .container-custom {
+      text-align: center;
+      display: block;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+    }
+    &-left {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer-sp-menu {
+    display: none;
   }
 }
