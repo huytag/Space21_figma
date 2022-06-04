@@ -3,6 +3,7 @@ body {
   margin: 0;
   background: #25282F;
   color: #FFFFFF;
+  font-family: "Inter", sans-serif;
 }
 
 .container-custom {
@@ -35,6 +36,7 @@ a {
   color: #FFFFFF;
   font-weight: 600;
   font-size: 18px;
+  display: inline-block;
   line-height: 1.2222222222;
   padding: 20px 45px;
   border-radius: 10px;
@@ -43,9 +45,24 @@ a {
   background: #0FBFB5;
   border: none;
 }
+.button-primary.is-active {
+  background: #3A3D45;
+}
 .button-gray {
-  background: #9e9e9e;
+  background: #3A3D45;
   border-radius: 5px;
+}
+.button-gray.is-active {
+  background: #0FBFB5;
+}
+.button-outline {
+  background: transparent;
+  border: 1px solid #0FBFB5;
+  color: #0FBFB5 !important;
+  border-radius: 5px;
+}
+.button-blue {
+  background: #1B75BC;
 }
 
 .title {
@@ -545,7 +562,7 @@ a {
   gap: 0 60px;
 }
 .account-logo {
-  width: 175px;
+  width: 185px;
 }
 .account-logo img {
   padding: 8px;
@@ -884,6 +901,941 @@ a {
     display: block;
     text-align: center;
   }
+}
+.inventory-nft-content {
+  background: #3A3D45;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.inventory-nft-top {
+  padding: 38px 32px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid #25282f;
+}
+.inventory-nft-top-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0 20px;
+}
+.inventory-nft-top-info .info-content .title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 7px;
+}
+.inventory-nft-top-info .info-content .desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+.inventory-nft-top-info .info-content .info-btn-group {
+  display: flex;
+  gap: 0 15px;
+  margin-top: 11px;
+}
+.inventory-nft-top-info .info-content .info-btn-group .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 10px;
+  height: 36px;
+}
+.inventory-nft-top-selec {
+  display: inline-flex;
+  gap: 0 15px;
+}
+.inventory-nft-top-selec .form-select {
+  border-radius: 5px;
+  width: 200px;
+}
+.inventory-nft-items {
+  padding: 38px 32px 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+  flex-wrap: wrap;
+}
+.inventory-nft-item {
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+  color: #5A5A5A;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.6;
+}
+.inventory-nft-item.is-active {
+  opacity: 1;
+}
+.inventory-nft-item .item-img {
+  margin: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.inventory-nft-item .item-img img {
+  transition: all 0.3s ease-in;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+.inventory-nft-item .item-img .item-flag {
+  position: absolute;
+  background: #FFFFFF;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inventory-nft-item .item-img .item-flag span {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.inventory-nft-item .item-img .item-flag .arrow-down {
+  position: absolute;
+  bottom: -5px;
+  border: none;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 5px solid #FFFFFF;
+}
+.inventory-nft-item:hover .item-img {
+  cursor: pointer;
+}
+.inventory-nft-item:hover .item-img img {
+  transform: scale(1.1);
+}
+.inventory-nft-item .item-content {
+  padding: 13px;
+  margin-top: auto;
+}
+.inventory-nft-item .item-content .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 7px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.inventory-nft-item .item-content .rarity {
+  display: block;
+  margin-bottom: 12px;
+  align-items: center;
+}
+.inventory-nft-item .item-content .button {
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+  height: 34px;
+}
+.inventory-nft-pagination {
+  padding: 0 32px 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+.inventory-nft-pagination .pagination .page-item {
+  margin: 0 5px;
+}
+.inventory-nft-pagination .pagination .page-item .page-link {
+  padding: 6px 12px;
+  height: 32px;
+  background: #f5f8fa;
+  border-radius: 4px;
+  color: #a1a5b7 !important;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inventory-nft-pagination .pagination .page-item .page-link.is-active {
+  background: #0FBFB5;
+  color: #FFFFFF !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .inventory-nft-top {
+    display: block;
+  }
+  .inventory-nft-top-info {
+    margin-bottom: 20px;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 772px) {
+  .inventory-nft-items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+  }
+}
+@media screen and (max-width: 512px) {
+  .inventory-nft-top-info {
+    display: block;
+    text-align: center;
+  }
+  .inventory-nft-top-info .info-img {
+    margin-bottom: 15px;
+  }
+  .inventory-nft-top-selec {
+    width: 100%;
+  }
+  .inventory-nft-top-selec .form-select {
+    width: 100%;
+  }
+  .inventory-nft-items {
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+  }
+}
+.inventory-deposit {
+  background: #3A3D45;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.inventory-deposit-previous {
+  padding: 22px;
+  border-bottom: 0.5px solid #25282f;
+}
+.inventory-deposit-previous .button {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 0;
+  color: #C0C0C0 !important;
+}
+.inventory-deposit-content {
+  padding: 22px;
+}
+.inventory-deposit-content-top {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0 75px;
+}
+.inventory-deposit-content-top-right {
+  width: 50%;
+}
+.inventory-deposit-content-top-right .title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 6px;
+  padding: 0;
+  display: block;
+}
+.inventory-deposit-content-top-right .desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0 5px;
+}
+.inventory-deposit-content-top-right .desc-chiu {
+  margin-left: 20px;
+  position: relative;
+}
+.inventory-deposit-content-top-right .desc-chiu::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 5px;
+  background: #FFFFFF;
+  position: absolute;
+  border-radius: 100rem;
+  top: 50%;
+  left: -15px;
+  transform: translateY(-50%);
+}
+.inventory-deposit-content-top-right .button {
+  background: #FFFFFF;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #5a5a5a !important;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.inventory-deposit-content-top-left {
+  width: 50%;
+}
+.inventory-deposit-content-top-left .content-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+  gap: 0 10px;
+}
+.inventory-deposit-content-top-left .content-logo .nft-type {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.inventory-deposit-content-top-left .content-qr {
+  text-align: center;
+}
+.inventory-deposit-content-top-left .content-qr .title {
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.inventory-deposit-content-top-left .content-qr img {
+  padding: 18px;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+}
+.inventory-deposit-content-top-left .content-address .title {
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+.inventory-deposit-content-top-left .content-address .input-group {
+  position: relative;
+}
+.inventory-deposit-content-top-left .content-address .input-group input {
+  border: none;
+  width: 100%;
+  padding: 8px 43px 8px 13px;
+  background: #33353c;
+  border-radius: 5px;
+}
+.inventory-deposit-content-top-left .content-address .input-group input::placeholder {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+.inventory-deposit-content-top-left .content-address .input-group img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.inventory-deposit-content-history {
+  margin-top: 40px;
+}
+.inventory-deposit-content-history-title {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  border-bottom: 0.5px solid #25282f;
+  padding: 13px 0;
+}
+.inventory-deposit-content-history-title img {
+  padding: 10px;
+  background: #2d3139;
+  border-radius: 100rem;
+}
+.inventory-deposit-content-history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 5px;
+  border-bottom: 0.5px solid #25282f;
+}
+.inventory-deposit-content-history-item-right {
+  width: 60px;
+  height: 60px;
+  border-radius: 100rem;
+  background: #2d3139;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+.inventory-deposit-content-history-item-right .item {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.inventory-deposit-content-history-item-right .item img {
+  width: 17.6px;
+  height: 16px;
+}
+.inventory-deposit-content-history-item-right .item span {
+  font-weight: 400;
+  font-size: 10.64px;
+  line-height: 13px;
+}
+.inventory-deposit-content-history-item-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+.inventory-deposit-content-history-item-left .item-price-status {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0 16px;
+}
+.inventory-deposit-content-history-item-left .item-price-status .item-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #0fbfb5;
+}
+.inventory-deposit-content-history-item-left .item-price-status .button {
+  padding: 6.5px 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #009c6b !important;
+  border: 1px solid #009c6b;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 0 7.5px;
+}
+.inventory-deposit-content-history-item-left .item-price-status .button.pending {
+  border: 1px solid #dd3a3a;
+  color: #dd3a3a !important;
+}
+.inventory-deposit-content-history-item-left .item-date-network-transaction {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0 30px;
+  color: #C0C0C0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.inventory-deposit-content-history-item-left .item-date-network-transaction strong {
+  color: #FFFFFF;
+  padding-right: 12px;
+}
+.inventory-deposit-content-history-item-left .item-date-network-transaction .item-transaction {
+  position: relative;
+}
+.inventory-deposit-content-history-item-left .item-date-network-transaction .item-transaction .text {
+  display: flex;
+  align-items: center;
+  gap: 0 5px;
+}
+.inventory-deposit-content-history-item-left .item-date-network-transaction .item-transaction .coppy {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.inventory-deposit-content-history-item-view a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C0C0C0 !important;
+  text-decoration: underline !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+}
+
+.inventory-sent {
+  padding: 20px 50px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #C0C0C0;
+}
+.inventory-content-sent {
+  width: 65%;
+  padding: 20px 50px;
+}
+.inventory-content-sent .title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.inventory-content-sent .sent {
+  padding: 20px 50px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+}
+.inventory-content-sent .sent::placeholder {
+  color: #C0C0C0 !important;
+}
+.inventory-content-sent-address {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+  margin-bottom: 40px;
+}
+.inventory-content-sent-address .input--group {
+  position: relative;
+}
+.inventory-content-sent-address .sent-address {
+  width: 100%;
+  border-radius: 5px !important;
+}
+.inventory-content-sent-address .sent-address-left {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+.inventory-content-sent-address .sent-address-right {
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+}
+.inventory-content-sent-asset {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0 25px;
+  background: #333742;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.inventory-content-sent-asset .info-coint {
+  display: flex;
+  gap: 0 15px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.inventory-content-sent-asset .info-name {
+  display: block;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+.inventory-content-sent-asset .info-price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C0C0C0;
+}
+.inventory-content-sent-quantity {
+  margin-bottom: 40px;
+}
+.inventory-content-sent-quantity-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.inventory-content-sent-quantity-top .availability {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C0C0C0;
+}
+.inventory-content-sent-quantity-input {
+  position: relative;
+}
+.inventory-content-sent-quantity-input input {
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.inventory-content-sent-quantity-input input::placeholder {
+  color: #C0C0C0 !important;
+}
+.inventory-content-sent-quantity-input .bnb {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 70px;
+  color: #C0C0C0;
+}
+.inventory-content-sent-quantity-input .max {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+.inventory-content-sent-gas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+.inventory-content-sent-gas .button {
+  padding: 10px;
+  border: 1px solid #bfbfbf;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #bfbfbf !important;
+}
+.inventory-content-sent-gas-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0 10px;
+}
+.inventory-content-sent-gas-info .info-name-price .info-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+.inventory-content-sent-gas-info .info-name-price .info-price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.inventory-content-sent-gas-info .info-name-price .info-price span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #929292;
+}
+.inventory-content-sent-group-btn {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-top: 0.5px solid #25282f;
+}
+.inventory-content-sent-group-btn .button {
+  padding: 15px 30px;
+  border-radius: 5px !important;
+}
+.inventory-content-sent-group-btn .button-gray {
+  display: inline-block;
+  background: #9e9e9e !important;
+  color: #25282f !important;
+  margin-right: 20px;
+}
+.inventory-content-sent2-input {
+  margin-bottom: 40px;
+  position: relative;
+}
+.inventory-content-sent2-input input {
+  width: 100%;
+  padding: 20px 60px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5a5a5a;
+  border-radius: 5px;
+  border: none;
+}
+.inventory-content-sent2-input .input-left {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+.inventory-content-sent2-input .input-right {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+.inventory-content-sent2-sending {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0 15px;
+  margin-bottom: 40px;
+}
+.inventory-content-sent2-sending .button {
+  padding: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #bfbfbf !important;
+  border: 1px solid #bfbfbf;
+  text-transform: uppercase;
+}
+.inventory-content-sent2-sending .sending-price {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+}
+.inventory-content-sent2-estimated {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.inventory-content-sent2-estimated-right {
+  display: flex;
+  text-align: right;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.inventory-content-sent2-estimated-right .price {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #929292;
+}
+.inventory-content-sent2-estimated-right .price strong {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+.inventory-content-sent2-estimated-right .price-max {
+  font-weight: 700;
+  color: #929292;
+}
+.inventory-content-sent2-total {
+  padding: 40px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inventory-content-sent2-total-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.inventory-content-sent2-total-left .total {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.inventory-content-sent2-total-left .amount {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #929292;
+}
+.inventory-content-sent2-total-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: right;
+}
+.inventory-content-sent2-total-right .price {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #929292;
+}
+.inventory-content-sent2-total-right .price strong {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.inventory-content-sent2-total-right .max-amount {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #929292;
+}
+.inventory-content-sent2-group-btn {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.store-info {
+  background: #21242A;
+  border-radius: 5px;
+}
+.store-info-top {
+  padding: 25px 10px;
+  margin: 0 20px;
+  border-bottom: 0.5px solid #5a5a5a;
+}
+.store-info-top .title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+.store-info-content {
+  display: flex;
+  justify-content: flex-start;
+  padding: 40px;
+  gap: 0 40px;
+}
+.store-info-content-left {
+  width: 40%;
+}
+.store-info-content-left img {
+  width: 100%;
+}
+.store-info-content-right {
+  width: 40%;
+}
+.store-info-content-right .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  display: block;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.store-info-content-right .sold-out {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  display: block;
+  margin-bottom: 15px;
+}
+.store-info-content-right .info-game {
+  background: #25282f;
+  border-radius: 37px;
+  width: 230px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 0 13px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 28px;
+}
+.store-info-content-right .desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin-bottom: 35px;
+}
+.store-info-content-right .current-price {
+  padding: 30px;
+  background: #2a2e36;
+  border-radius: 5px;
+}
+.store-info-content-right .current-price .current {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #C0C0C0;
+  display: block;
+  margin-bottom: 15px;
+}
+.store-info-content-right .current-price .price-now {
+  display: flex;
+  gap: 0 15px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #C0C0C0;
+  margin-bottom: 30px;
+}
+.store-info-content-right .current-price .price-now strong {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+.store-info-content-right .current-price .button {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hot-item-top span {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  padding: 20px 0;
+  display: block;
+  border-bottom: 0.5px solid #5a5a5a;
+}
+.hot-item-content {
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 0 40px;
+}
+.hot-item-content-item {
+  text-align: center;
+}
+.hot-item-content-item .item-image {
+  background-image: url("../image/store/bg_store_list.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.hot-item-content-item .item-image .cn {
+  margin: 30px auto;
+}
+.hot-item-content-item .name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-bottom: 11px;
+  display: block;
+}
+.hot-item-content-item .rarity-price {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.hot-item-content-item .rarity-price .rarity {
+  padding: 5px 17px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C0C0C0;
+  background: #21242a;
+  border-radius: 29px;
+  display: flex;
+  align-items: center;
+  gap: 0 5px;
+}
+.hot-item-content-item .rank {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 /*# sourceMappingURL=index.css.map */

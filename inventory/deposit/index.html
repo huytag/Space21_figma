@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space21</title>
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-custom">
+        <div class="header-container">
+          <div class="header-left">
+            <div class="div-logo">
+              <a data-href="/" href="/"
+                ><img srcset="../../image/logo/logo.png 2x" alt=""
+              /></a>
+            </div>
+            <ul class="header-menu">
+              <li class="header-menu-item is-active">
+                <a href="#" class="header-menu-link">About</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="#" class="header-menu-link">Store</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="#" class="header-menu-link menu-item-dropdown">Game</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="#" class="header-menu-link">Inventory</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="#" class="header-menu-link menu-item-dropdown">Node</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="#" class="header-menu-link">Marketplace</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-right">
+            <div class="header-search">
+              <input
+                type="text"
+                class="header-search-in_in"
+                placeholder="search..."
+              />
+              <button class="header-search-in_btn">
+                <img src="../../image/icon/Search.png" alt="" />
+              </button>
+            </div>
+            <div class="header-bells">
+              <a href="#"><img src="../../image/icon/Bell_pin.png" alt="" /></a>
+            </div>
+            <div class="header-user-info">
+              <div class="user-name">Hi, <span>HuyTag</span></div>
+              <div class="user-image">
+                <a href="#"><img src="../../image/Ellipse 117.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="toggle-menu d-lg-none">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="container-custom">
+        <div class="wrapper-container">
+          <div class="wrapper-container-left">
+            <div class="silder-menu-item">
+              <div class="silder-menu-title">Menu</div>
+              <div class="silder-menu-list-content">
+                <div class="silder-menu-list-content-item is-active">
+                  <div class="item-left">
+                    <div class="menu-icon">
+                      <img src="../../image/icon/Inventory.png" alt="" />
+                    </div>
+                    <label
+                      ><a data-href="/inventory" href="/inventory"
+                        >Inventory</a
+                      ></label
+                    >
+                  </div>
+                  <div class="item-right">
+                    <img src="../../image/icon/dropdown-left.png" alt="" />
+                  </div>
+                </div>
+                <div class="silder-menu-list-content-item">
+                  <div class="item-left">
+                    <div class="menu-icon">
+                      <img src="../../image/icon/Store.png" alt="" />
+                    </div>
+                    <label>Store</label>
+                  </div>
+                  <div class="item-right">
+                    <img src="../../image/icon/dropdown-left.png" alt="" />
+                  </div>
+                </div>
+                <div class="silder-menu-list-content-item">
+                  <div class="item-left">
+                    <div class="menu-icon">
+                      <img src="../../image/icon/Gamepad.png" alt="" />
+                    </div>
+                    <label>Game</label>
+                  </div>
+                  <div class="item-right">
+                    <img src="../../image/icon/dropdown-left.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="silder-menu-title">Account</div>
+              <div class="silder-menu-list-content">
+                <div class="silder-menu-list-content-item">
+                  <div class="item-left">
+                    <div class="menu-icon">
+                      <img
+                        src="../../image/icon/Account Infomation.png"
+                        alt=""
+                      />
+                    </div>
+                    <label
+                      ><a
+                        data-href="/account-information"
+                        href="/account-information"
+                        >Account Infomation</a
+                      ></label
+                    >
+                  </div>
+                  <div class="item-right">
+                    <img src="../../image/icon/dropdown-left.png" alt="" />
+                  </div>
+                </div>
+                <div class="silder-menu-list-content-item">
+                  <div class="item-left">
+                    <div class="menu-icon">
+                      <img src="../../image/icon/Security.png" alt="" />
+                    </div>
+                    <label
+                      ><a data-href="/security" href="/security"
+                        >Security</a
+                      ></label
+                    >
+                  </div>
+                  <div class="item-right">
+                    <img src="../../image/icon/dropdown-left.png" alt="" />
+                  </div>
+                </div>
+                <div class="silder-menu-list-content-item">
+                  <div class="item-left">
+                    <div class="menu-icon">
+                      <img src="../../image/icon/Node.png" alt="" />
+                    </div>
+                    <label>Node</label>
+                  </div>
+                  <div class="item-right">
+                    <img src="../../image/icon/dropdown-left.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="silder-menu-title">Others</div>
+              <div class="silder-menu-list-content">
+                <div class="silder-menu-list-content-item">
+                  <div class="item-left">
+                    <div class="menu-icon">
+                      <img src="../../image/icon/Support.png" alt="" />
+                    </div>
+                    <label>Support</label>
+                  </div>
+                  <div class="item-right">
+                    <img src="../../image/icon/dropdown-left.png" alt="" />
+                  </div>
+                </div>
+                <div class="silder-menu-list-content-item">
+                  <div class="item-left">
+                    <div class="menu-icon">
+                      <img src="../../image/icon/Ticket.png" alt="" />
+                    </div>
+                    <label>Ticket</label>
+                  </div>
+                  <div class="item-right">
+                    <img src="../../image/icon/dropdown-left.png" alt="" />
+                  </div>
+                </div>
+                <div class="silder-menu-list-content-item">
+                  <div class="item-left">
+                    <div class="menu-icon">
+                      <img src="../../image/icon/Discord.png" alt="" />
+                    </div>
+                    <label>Discord</label>
+                  </div>
+                  <div class="item-right">
+                    <img src="../../image/icon/dropdown-left.png" alt="" />
+                  </div>
+                </div>
+                <div class="silder-menu-list-content-item">
+                  <div class="item-left">
+                    <div class="menu-icon">
+                      <img src="../../image/icon/Setting.png" alt="" />
+                    </div>
+                    <label>Setting</label>
+                  </div>
+                  <div class="item-right">
+                    <img src="../../image/icon/dropdown-left.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper-container-content-right">
+            <div class="inventory">
+              <div class="inventory-btn-top">
+                <a href="../../inventory/" class="button button-gray is-active">
+                  <img src="../../image/icon/token-icon.png" alt="" />
+                  Tokens
+                </a>
+                <a href="" class="button button-gray"
+                  ><img src="../../image/icon/Union.png" alt="" />NFT</a
+                >
+              </div>
+              <div class="inventory-deposit">
+                <div class="inventory-deposit-previous">
+                  <a href="../../inventory/" class="button">
+                    <img src="../../image/icon/Expand_left_light.png" alt="" />
+                    Deposit ETH</a
+                  >
+                </div>
+                <div class="inventory-deposit-content">
+                  <div class="inventory-deposit-content-top">
+                    <div class="inventory-deposit-content-top-left">
+                      <div class="content-logo">
+                        <img src="../../image/icon/Group 8597.png" alt="" />
+                        <span class="nft-type">SPACE</span>
+                      </div>
+                      <div class="content-address">
+                        <span class="title">Address</span>
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            placeholder="389dhdd93989gg43kmlknj998dfdy8987st6r55xt67tt7323"
+                          />
+                          <img src="../../image/icon/documents.png" alt="" />
+                        </div>
+                      </div>
+                      <div class="content-qr">
+                        <span class="title">QR Code</span>
+                        <img src="../../image/icon/QR_c.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="inventory-deposit-content-top-right">
+                      <span class="title">Deposit hasn’t arrived</span>
+                      <p class="desc">
+                        If you encounter the following problems during the
+                        deposit process, you can go to Deposit Status Query to
+                        search for your current deposit status or retrieve your
+                        assets via self service application.
+                      </p>
+                      <p class="desc desc-chiu">
+                        Deposit has not arrived after a long while.
+                      </p>
+                      <p class="desc desc-chiu">
+                        Didn’t enter MeMo/ Tag correctly
+                      </p>
+                      <p class="desc desc-chiu">Deposited unlisted coins</p>
+                      <a href="" class="button">Search</a>
+                      <span class="title">FAQ</span>
+                      <p class="desc">
+                        <img src="../../image/icon/faq/start.png" alt="" />
+                        Video Tutorial
+                      </p>
+                      <p class="desc">
+                        <img
+                          src="../../image/icon/faq/remove document.png"
+                          alt=""
+                        />
+                        How to Deposit Crypto Step-by-step Guide
+                      </p>
+                      <p class="desc">
+                        <img
+                          src="../../image/icon/faq/remove document.png"
+                          alt=""
+                        />
+                        Why Has my deposit Not Been Credited yet?
+                      </p>
+                      <p class="desc">
+                        <img
+                          src="../../image/icon/faq/remove document.png"
+                          alt=""
+                        />
+                        How Has Retrieve Crypto Desposit with Wrong or Missing
+                        Tag/Memo
+                      </p>
+                      <p class="desc">
+                        <img
+                          src="../../image/icon/faq/remove document.png"
+                          alt=""
+                        />
+                        How to Buy Crypto and Get Started on Binance
+                      </p>
+                    </div>
+                  </div>
+                  <div class="inventory-deposit-content-history">
+                    <div class="inventory-deposit-content-history-title">
+                      <img src="../../image/icon/History_arrow.png" alt="" />
+                      Desposit history
+                    </div>
+                    <div class="inventory-deposit-content-history-items">
+                      <div class="inventory-deposit-content-history-item">
+                        <div
+                          class="inventory-deposit-content-history-item-left"
+                        >
+                          <div class="item-price-status">
+                            <div class="item-price text-primaty">
+                              <img
+                                src="../../image/icon/tether-usdt-logo.png"
+                                alt=""
+                              />
+                              +5.9899 ETH
+                            </div>
+                            <a href="" class="button button-outline"
+                              >
+                              <img src="../../image/icon/Check_ring.png" alt="">
+                              Confrimed</a
+                            >
+                          </div>
+                          <div class="item-date-network-transaction">
+                            <div class="item-date">2021 - 11- 09 12:09</div>
+                            <div class="item network">
+                              Network <strong>TRX</strong>
+                            </div>
+                            <div class="item-transaction">
+                              <div class="text">
+                                <img src="../../image/icon/Question.png" alt="">
+                                Transaction Hash:
+                                <strong
+                                  >0x756687jjn4577kj3bhjb4hj46l5j799nlbhvgdd4355780980ggf090sdghgi</strong
+                                >
+                              </div>
+                              <img class="coppy" src="../../image/icon/documents.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="inventory-deposit-content-history-item-right"
+                        >
+                          <div class="item">
+                            <img src="../../image/icon/deposit.png" alt="" />
+                            <span class="text-primaty">Deposit</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="inventory-deposit-content-history-item">
+                        <div
+                          class="inventory-deposit-content-history-item-left"
+                        >
+                          <div class="item-price-status">
+                            <div class="item-price text-primaty">
+                              <img
+                                src="../../image/icon/tether-usdt-logo.png"
+                                alt=""
+                              />
+                              +5.9899 ETH
+                            </div>
+                            <a href="" class="button button-outline pending"
+                              >
+                              <img src="../../image/icon/Time_atack.png" alt="">
+                              Pending</a
+                            >
+                          </div>
+                          <div class="item-date-network-transaction">
+                            <div class="item-date">2021 - 11- 09 12:09</div>
+                            <div class="item network">
+                              Network <strong>TRX</strong>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="inventory-deposit-content-history-item-right"
+                        >
+                          <div class="item">
+                            <img src="../../image/icon/deposit.png" alt="" />
+                            <span class="text-primaty">Deposit</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="inventory-deposit-content-history-item">
+                        <div
+                          class="inventory-deposit-content-history-item-left"
+                        >
+                          <div class="item-price-status">
+                            <div class="item-price text-primaty">
+                              <img
+                                src="../../image/icon/tether-usdt-logo.png"
+                                alt=""
+                              />
+                              +5.9899 ETH
+                            </div>
+                            <a href="" class="button button-outline"
+                              >
+                              <img src="../../image/icon/Check_ring.png" alt="">
+                              Confrimed</a
+                            >
+                          </div>
+                          <div class="item-date-network-transaction">
+                            <div class="item-date">2021 - 11- 09 12:09</div>
+                            <div class="item network">
+                              Network <strong>TRX</strong>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="inventory-deposit-content-history-item-right"
+                        >
+                          <div class="item">
+                            <img src="../../image/icon/deposit.png" alt="" />
+                            <span class="text-primaty">Deposit</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="inventory-deposit-content-history-item-view">
+                          <a href="">View All</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container-custom">
+        <div class="footer-left">
+          <a href="/"
+            ><img src="../../image/logo/logo-f.png" alt="" class="footer-logo"
+          /></a>
+          <div class="footer-sp-menu">
+            <span>About</span>
+            <span>Steamworks</span>
+            <span>Steam Distribution</span>
+            <span>Support</span>
+            <span>Girt Cards</span>
+          </div>
+        </div>
+        <div class="footer-right">
+          <span
+            >Copyright © 2010-2021 Space Company S.L. All rights reserved.</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/scripts.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </body>
+</html>

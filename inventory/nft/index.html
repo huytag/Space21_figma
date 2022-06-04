@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space21</title>
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-custom">
+        <div class="header-container">
+          <div class="header-left">
+            <div class="div-logo">
+              <a data-href="/" href="/"
+                ><img srcset="../../image/logo/logo.png 2x" alt=""
+              /></a>
+            </div>
+            <ul class="header-menu">
+              <li class="header-menu-item is-active">
+                <a href="#" class="header-menu-link">About</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="#" class="header-menu-link">Store</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="#" class="header-menu-link menu-item-dropdown">Game</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="#" class="header-menu-link">Inventory</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="#" class="header-menu-link menu-item-dropdown">Node</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="#" class="header-menu-link">Marketplace</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-right">
+            <div class="header-search">
+              <input
+                type="text"
+                class="header-search-in_in"
+                placeholder="search..."
+              />
+              <button class="header-search-in_btn">
+                <img src="../../image/icon/Search.png" alt="" />
+              </button>
+            </div>
+            <div class="header-bells">
+              <a href="#"><img src="../../image/icon/Bell_pin.png" alt="" /></a>
+            </div>
+            <div class="header-user-info">
+              <div class="user-name">Hi, <span>HuyTag</span></div>
+              <div class="user-image">
+                <a href="#"><img src="../../image/Ellipse 117.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="toggle-menu d-lg-none">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="container-custom">
+        <div class="wrapper-container">
+          <div class="wrapper-container-left">
+            <div class="silder-menu-item">
+              <div class="silder-menu-title">Menu</div>
+              <div class="silder-menu-list-content">
+                <div class="silder-menu-list-content-item is-active">
+                  <div class="item-left">
+                    <div class="menu-icon">
+                      <img src="../../image/icon/Inventory.png" alt="" />
+                    </div>
+                    <label
+                      ><a data-href="/inventory" href="/inventory"
+                        >Inventory</a
+                      ></label
+                    >
+                  </div>
+                  <div class="item-right">
+                    <img src="../../image/icon/dropdown-left.png" alt="" />
+                  </div>
+                </div>
+                <div class="silder-menu-list-content-item">
+                  <div class="item-left">
+                    <div class="menu-icon">
+                      <img src="../../image/icon/Store.png" alt="" />
+                    </div>
+                    <label>Store</label>
+                  </div>
+                  <div class="item-right">
+                    <img src="../../image/icon/dropdown-left.png" alt="" />
+                  </div>
+                </div>
+                <div class="silder-menu-list-content-item">
+                  <div class="item-left">
+                    <div class="menu-icon">
+                      <img src="../../image/icon/Gamepad.png" alt="" />
+                    </div>
+                    <label>Game</label>
+                  </div>
+                  <div class="item-right">
+                    <img src="../../image/icon/dropdown-left.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="silder-menu-title">Account</div>
+              <div class="silder-menu-list-content">
+                <div class="silder-menu-list-content-item">
+                  <div class="item-left">
+                    <div class="menu-icon">
+                      <img
+                        src="../../image/icon/Account Infomation.png"
+                        alt=""
+                      />
+                    </div>
+                    <label
+                      ><a
+                        data-href="/account-information"
+                        href="/account-information"
+                        >Account Infomation</a
+                      ></label
+                    >
+                  </div>
+                  <div class="item-right">
+                    <img src="../../image/icon/dropdown-left.png" alt="" />
+                  </div>
+                </div>
+                <div class="silder-menu-list-content-item">
+                  <div class="item-left">
+                    <div class="menu-icon">
+                      <img src="../../image/icon/Security.png" alt="" />
+                    </div>
+                    <label
+                      ><a data-href="/security" href="/security"
+                        >Security</a
+                      ></label
+                    >
+                  </div>
+                  <div class="item-right">
+                    <img src="../../image/icon/dropdown-left.png" alt="" />
+                  </div>
+                </div>
+                <div class="silder-menu-list-content-item">
+                  <div class="item-left">
+                    <div class="menu-icon">
+                      <img src="../../image/icon/Node.png" alt="" />
+                    </div>
+                    <label>Node</label>
+                  </div>
+                  <div class="item-right">
+                    <img src="../../image/icon/dropdown-left.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="silder-menu-title">Others</div>
+              <div class="silder-menu-list-content">
+                <div class="silder-menu-list-content-item">
+                  <div class="item-left">
+                    <div class="menu-icon">
+                      <img src="../../image/icon/Support.png" alt="" />
+                    </div>
+                    <label>Support</label>
+                  </div>
+                  <div class="item-right">
+                    <img src="../../image/icon/dropdown-left.png" alt="" />
+                  </div>
+                </div>
+                <div class="silder-menu-list-content-item">
+                  <div class="item-left">
+                    <div class="menu-icon">
+                      <img src="../../image/icon/Ticket.png" alt="" />
+                    </div>
+                    <label>Ticket</label>
+                  </div>
+                  <div class="item-right">
+                    <img src="../../image/icon/dropdown-left.png" alt="" />
+                  </div>
+                </div>
+                <div class="silder-menu-list-content-item">
+                  <div class="item-left">
+                    <div class="menu-icon">
+                      <img src="../../image/icon/Discord.png" alt="" />
+                    </div>
+                    <label>Discord</label>
+                  </div>
+                  <div class="item-right">
+                    <img src="../../image/icon/dropdown-left.png" alt="" />
+                  </div>
+                </div>
+                <div class="silder-menu-list-content-item">
+                  <div class="item-left">
+                    <div class="menu-icon">
+                      <img src="../../image/icon/Setting.png" alt="" />
+                    </div>
+                    <label>Setting</label>
+                  </div>
+                  <div class="item-right">
+                    <img src="../../image/icon/dropdown-left.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper-container-content-right">
+            <div class="inventory">
+              <div class="inventory-btn-top">
+                <a href="../../inventory/" class="button button-gray">
+                  <img src="../../image/icon/token-icon.png" alt="" />
+                  Tokens
+                </a>
+                <a href="" class="button button-gray is-active"
+                  ><img src="../../image/icon/Union.png" alt="" />NFT</a
+                >
+              </div>
+              <div class="inventory-nft-content">
+                <div class="inventory-nft-top">
+                  <div class="inventory-nft-top-info">
+                    <div class="info-img">
+                      <img src="../../image/nfts/Ellipse 169.png" alt="" />
+                    </div>
+                    <div class="info-content">
+                      <h6 class="title">Spider Tank Game Items</h6>
+                      <span class="desc">Your Items (2)</span>
+                      <div class="info-btn-group">
+                        <a href="" class="button button-primary">
+                          <img src="../../image/icon/Play.png" alt="" />
+                          <span>Play Game</span></a
+                        >
+                        <a href="" class="button button-outline">
+                          <img src="../../image/icon/world_alt.png" alt="" />
+                          <span>Website</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="inventory-nft-top-selec">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Show all items</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Sort By</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="inventory-nft-items">
+                  <div class="inventory-nft-item is-active">
+                    <div class="item-img">
+                      <img src="../../image/nfts/Rectangle 4127.png" alt="" />
+                      <div class="item-flag">
+                        <span>12</span>
+                        <div class="arrow-down"></div>
+                      </div>
+                    </div>
+                    <div class="item-content">
+                      <h6 class="title">DigitalArt #88jfuhdi45...</h6>
+                      <span class="rarity">
+                        <span class="rarity-type">
+                          <img
+                            src="../../image/nfts/Uncommon.png"
+                            alt=""
+                          /> </span
+                        >Uncommon</span
+                      >
+                      <a href="" class="button button-primary">
+                        <img src="../../image/icon/Send.png" alt="" />
+                        sent</a
+                      >
+                    </div>
+                  </div>
+                  <div class="inventory-nft-item">
+                    <div class="item-img">
+                      <img src="../../image/nfts/Rectangle 4129.png" alt="" />
+                      <div class="item-flag">
+                        <span>12</span>
+                        <div class="arrow-down"></div>
+                      </div>
+                    </div>
+                    <div class="item-content">
+                      <h6 class="title">DigitalArt #88</h6>
+                      <span class="rarity">
+                        <span class="rarity-type">
+                          <img src="../../image/nfts/Rare.png" alt="" /> </span
+                        >Rare</span
+                      >
+                      <a href="" class="button button-blue">
+                        <img src="../../image/icon/Info.png" alt="" />
+                        Claim</a
+                      >
+                    </div>
+                  </div>
+                  <div class="inventory-nft-item">
+                    <div class="item-img">
+                      <img src="../../image/nfts/Rectangle 4131.png" alt="" />
+                      <div class="item-flag">
+                        <span>12</span>
+                        <div class="arrow-down"></div>
+                      </div>
+                    </div>
+                    <div class="item-content">
+                      <h6 class="title">DigitalArt #88</h6>
+                      <span class="rarity">
+                        <span class="rarity-type">
+                          <img
+                            src="../../image/nfts/Legendary.png"
+                            alt=""
+                          /> </span
+                        >Legendary</span
+                      >
+                      <a href="" class="button button-blue">
+                        <img src="../../image/icon/Info.png" alt="" />
+                        Claim</a
+                      >
+                    </div>
+                  </div>
+                  <div class="inventory-nft-item">
+                    <div class="item-img">
+                      <img src="../../image/nfts/Rectangle 4133.png" alt="" />
+                      <div class="item-flag">
+                        <span>12</span>
+                        <div class="arrow-down"></div>
+                      </div>
+                    </div>
+                    <div class="item-content">
+                      <h6 class="title">DigitalArt #88</h6>
+                      <span class="rarity">
+                        <span class="rarity-type">
+                          <img src="../../image/nfts/Rare.png" alt="" /> </span
+                        >Rare</span
+                      >
+                      <a href="" class="button button-blue">
+                        <img src="../../image/icon/Info.png" alt="" />
+                        Claim</a
+                      >
+                    </div>
+                  </div>
+                  <div class="inventory-nft-item">
+                    <div class="item-img">
+                      <img src="../../image/nfts/Rectangle 4138.png" alt="" />
+                      <div class="item-flag">
+                        <span>12</span>
+                        <div class="arrow-down"></div>
+                      </div>
+                    </div>
+                    <div class="item-content">
+                      <h6 class="title">DigitalArt #88</h6>
+                      <span class="rarity">
+                        <span class="rarity-type">
+                          <img
+                            src="../../image/nfts/Common.png"
+                            alt=""
+                          /> </span
+                        >Common</span
+                      >
+                      <a href="" class="button button-blue">
+                        <img src="../../image/icon/Info.png" alt="" />
+                        Claim</a
+                      >
+                    </div>
+                  </div>
+                  <div class="inventory-nft-item">
+                    <div class="item-img">
+                      <img src="../../image/nfts/Rectangle 4139.png" alt="" />
+                      <div class="item-flag">
+                        <span>12</span>
+                        <div class="arrow-down"></div>
+                      </div>
+                    </div>
+                    <div class="item-content">
+                      <h6 class="title">DigitalArt #88</h6>
+                      <span class="rarity">
+                        <span class="rarity-type">
+                          <img src="../../image/nfts/Rare.png" alt="" /> </span
+                        >Rare</span
+                      >
+                      <a href="" class="button button-blue">
+                        <img src="../../image/icon/Info.png" alt="" />
+                        Claim</a
+                      >
+                    </div>
+                  </div>
+                  <div class="inventory-nft-item is-active">
+                    <div class="item-img">
+                      <img src="../../image/nfts/Rectangle 4140.png" alt="" />
+                      <div class="item-flag">
+                        <span>12</span>
+                        <div class="arrow-down"></div>
+                      </div>
+                    </div>
+                    <div class="item-content">
+                      <h6 class="title">DigitalArt #88</h6>
+                      <span class="rarity">
+                        <span class="rarity-type">
+                          <img src="../../image/nfts/Epic.png" alt="" /> </span
+                        >Epic</span
+                      >
+                      <a href="" class="button button-primary">
+                        <img src="../../image/icon/Send.png" alt="" />
+                        Sent</a
+                      >
+                    </div>
+                  </div>
+                  <div class="inventory-nft-item">
+                    <div class="item-img">
+                      <img src="../../image/nfts/Rectangle 4141.png" alt="" />
+                      <div class="item-flag">
+                        <span>12</span>
+                        <div class="arrow-down"></div>
+                      </div>
+                    </div>
+                    <div class="item-content">
+                      <h6 class="title">DigitalArt #88</h6>
+                      <span class="rarity">
+                        <span class="rarity-type">
+                          <img
+                            src="../../image/nfts/Ancient.png"
+                            alt=""
+                          /> </span
+                        >Ancient</span
+                      >
+                      <a href="" class="button button-blue">
+                        <img src="../../image/icon/Info.png" alt="" />
+                        Claim</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="inventory-nft-pagination">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item previous">
+                        <a class="page-link" href="#">
+                          <img src="../../image/icon/previous.png" alt="" />
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link is-active" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                      </li>
+                      <li class="page-item next">
+                        <a class="page-link" href="#">
+                          <img src="../../image/icon/next.png" alt="" />
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container-custom">
+        <div class="footer-left">
+          <a href="/"
+            ><img src="../../image/logo/logo-f.png" alt="" class="footer-logo"
+          /></a>
+          <div class="footer-sp-menu">
+            <span>About</span>
+            <span>Steamworks</span>
+            <span>Steam Distribution</span>
+            <span>Support</span>
+            <span>Girt Cards</span>
+          </div>
+        </div>
+        <div class="footer-right">
+          <span
+            >Copyright © 2010-2021 Space Company S.L. All rights reserved.</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/scripts.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </body>
+</html>

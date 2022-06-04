@@ -1,0 +1,228 @@
+.inventory-nft {
+  &-content {
+    background: $bg-modal;
+    border-radius: 5px;
+    margin-top: 30px;
+  }
+  &-top {
+    padding: 38px 32px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid #25282f;
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0 20px;
+      .info-content {
+        .title {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 30px;
+          margin-bottom: 7px;
+        }
+        .desc {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 30px;
+        }
+        .info-btn-group {
+          display: flex;
+          gap: 0 15px;
+          margin-top: 11px;
+          .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0 10px;
+            border-radius: 5px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            padding: 10px;
+            height: 36px;
+          }
+        }
+      }
+    }
+    &-selec {
+      display: inline-flex;
+      gap: 0 15px;
+      .form-select {
+        border-radius: 5px;
+        width: 200px;
+      }
+    }
+  }
+  &-items {
+    padding: 38px 32px 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    flex-wrap: wrap;
+  }
+  &-item {
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+    color: $text-gray1;
+    background: $text_white;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.6;
+    &.is-active {
+      opacity: 1;
+    }
+    .item-img {
+      margin: 8px;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+      img {
+        transition: all 0.3s ease-in;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+      }
+      .item-flag {
+        position: absolute;
+        background: $text_white;
+        width: 40px;
+        height: 40px;
+        top: 0;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 22px;
+        }
+        .arrow-down {
+          position: absolute;
+          bottom: -5px;
+          border: none;
+          width: 0;
+          height: 0;
+          border-left: 20px solid transparent;
+          border-right: 20px solid transparent;
+          border-top: 5px solid $text_white;
+        }
+      }
+    }
+    &:hover {
+      .item-img {
+        cursor: pointer;
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .item-content {
+      padding: 13px;
+      margin-top: auto;
+      .title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 7px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .rarity {
+        display: block;
+        margin-bottom: 12px;
+        align-items: center;
+      }
+      .button {
+        padding: 10px 20px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        border-radius: 5px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 10px;
+        height: 34px;
+      }
+    }
+  }
+  &-pagination {
+    padding: 0 32px 50px;
+    display: flex;
+    justify-content: flex-end;
+    .pagination {
+      .page-item {
+        margin: 0 5px;
+        .page-link {
+          padding: 6px 12px;
+          height: 32px;
+          background: #f5f8fa;
+          border-radius: 4px;
+          color: #a1a5b7 !important;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+          border: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &.is-active {
+            background: $text-primary;
+            color: $text_white !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .inventory-nft {
+    &-top {
+      display: block;
+      &-info {
+        margin-bottom: 20px;
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 772px) {
+  .inventory-nft {
+    &-items {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .inventory-nft {
+    &-top-info {
+      display: block;
+      text-align: center;
+      .info-img {
+        margin-bottom: 15px;
+      }
+    }
+    &-top {
+      &-selec {
+        width: 100%;
+        .form-select {
+          width: 100%;
+        }
+      }
+    }
+    &-items {
+      grid-template-columns: 1fr;
+      grid-gap: 25px;
+    }
+  }
+}
